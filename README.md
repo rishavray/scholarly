@@ -1,5 +1,5 @@
 # scholarly
-scholarly is a module that allows you to retrieve author and publication information from [Google Scholar](https://scholar.google.com) in a friendly, Pythonic way.
+This is the fork of [scholarly](https://github.com/OrganicIrradiation/scholarly) which is a module that allows you to retrieve author and publication information from [Google Scholar](https://scholar.google.com) in a friendly, Pythonic way. In this fork, the bibtex entries are also retrieved along with other information in the Publication object.
 
 
 ## Usage
@@ -42,7 +42,7 @@ print(next(scholarly.search_author('Steven A. Cholewiak')))
      'url_picture': 'https://scholar.google.com/citations?view_op=medium_photo&user=4arkOLcAAAAJ'}
 ```
 
-* `search_pubs_query` -- Search for articles/publications and return generator of Publication objects.
+* `search_pubs_query` -- Search for articles/publications and return generator of Publication objects. The bibref attribute contains the Bibtex entry for the particular publication.
 
 ```python
     >>> search_query = scholarly.search_pubs_query('Perception of physical stability and center of mass of 3D objects')
@@ -64,6 +64,7 @@ print(next(scholarly.search_author('Steven A. Cholewiak')))
              'title': 'Perception of physical stability and center of mass of 3-D '
                       'objects',
              'url': 'http://jov.arvojournals.org/article.aspx?articleid=2213254'},
+     'bibref': u'@article{cholewiak2015perception,\n  title={Perception of physical stability and center of mass of 3-D objects},\n  author={Cholewiak, Steven A and Fleming, Roland W and Singh, Manish},\n  journal={Journal of vision},\n  volume={15},\n  number={2},\n  pages={13--13},\n  year={2015},\n  publisher={The Association for Research in Vision and Ophthalmology}\n}\n',
      'citedby': 14,
      'id_scholarcitedby': '15736880631888070187',
      'source': 'scholar',
@@ -94,17 +95,9 @@ Here's a quick example demonstrating how to retrieve an author's profile then re
 
 
 ## Installation
-Use `pip` to install from pypi:
+clone the package using git:
 
-    pip install scholarly
-
-or `pip` to install from github:
-
-    pip install git+https://github.com/OrganicIrradiation/scholarly.git
-
-or clone the package using git:
-
-    git clone https://github.com/OrganicIrradiation/scholarly.git
+    git clone https://github.com/rishavray/scholarly.git
 
 
 ## Requirements
