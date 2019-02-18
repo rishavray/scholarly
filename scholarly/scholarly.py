@@ -151,6 +151,7 @@ class Publication(object):
             for link in lowerlinks:
                 if 'Import into BibTeX' in link.text:
                     self.url_scholarbib = link['href']
+                    self.bibref = _get_page(self.url_scholarbib)
                 if 'Cited by' in link.text:
                     self.citedby = int(re.findall(r'\d+', link.text)[0])
                     self.id_scholarcitedby = re.findall(_SCHOLARPUBRE, link['href'])[0]
