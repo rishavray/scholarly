@@ -64,7 +64,7 @@ print(next(scholarly.search_author('Steven A. Cholewiak')))
              'title': 'Perception of physical stability and center of mass of 3-D '
                       'objects',
              'url': 'http://jov.arvojournals.org/article.aspx?articleid=2213254'},
-     'bibref': u'@article{cholewiak2015perception,\n  title={Perception of physical stability and center of mass of 3-D objects},\n  author={Cholewiak, Steven A and Fleming, Roland W and Singh, Manish},\n  journal={Journal of vision},\n  volume={15},\n  number={2},\n  pages={13--13},\n  year={2015},\n  publisher={The Association for Research in Vision and Ophthalmology}\n}\n',
+     'bibref': '@article{cholewiak2015perception,\n  title={Perception of physical stability and center of mass of 3-D objects},\n  author={Cholewiak, Steven A and Fleming, Roland W and Singh, Manish},\n  journal={Journal of vision},\n  volume={15},\n  number={2},\n  pages={13--13},\n  year={2015},\n  publisher={The Association for Research in Vision and Ophthalmology}\n}\n',
      'citedby': 14,
      'id_scholarcitedby': '15736880631888070187',
      'source': 'scholar',
